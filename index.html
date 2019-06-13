@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<title>PHILIPS Video Chat</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://meet.jit.si/external_api.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			var domain = "meet.jit.si";
+			var options = {
+				roomName: "JitsiMeetAPIExample",
+				width: 700,
+				height: 500,
+				parentNode: document.querySelector('#meet')
+			}
+		var api = new JitsiMeetExternalAPI(domain, options);
+		})
+	</script>
+
+</head>
+<body style="background-color: white">
+
+	<div id="meet" style="margin: auto; border: 1px solid black; border-radius: 4px; width: 700px; height: 500px"></div>
+
+</body>
+</html>
